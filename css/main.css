@@ -1,0 +1,257 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Section
+    4.  Footer
+ */
+
+
+/* 1. ---General Styles--- */
+
+body {
+   color: #626262;
+   font-family: 'Poppins', 'Times New Roman', serif;
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+.cr-red {
+   color: #9a2018;
+}
+
+/* ---Utility Classes--- */
+
+.hidden {
+   display: none;
+}
+
+.box {
+   background-color: powderblue;
+   color: rgb(27, 27, 27);
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom:10px;
+}
+
+
+
+
+#main-header {
+   height: 102px;
+}
+
+/* 2. ---Main Header--- */
+
+/* 2.1 ---Logo--- */
+#logo {
+   margin-top: 32px;
+   order: -1;
+   width: 225px;
+   z-index: 1;
+}
+
+/* 2.2 ---Main Nav--- */
+
+#sticky-nav-con {
+   position: sticky;
+   top: 0px; /* using 0 to sticky it to the very bottom of the page  */
+   background-color: #ffffff;
+   height: 88px;
+}
+
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: inline;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #FDBA43;
+}
+
+#main-nav ul li a:hover {
+   color: #86261A;
+}
+
+#main-nav ul li {
+   display: inline;
+   margin-right: 50px;
+}
+
+#main-nav {
+   font-size: 25px;
+   margin-top: 5%;
+}
+
+.nav-list ul{
+   width: 600px;
+}
+
+
+/* 2.3 ---Header Icons--- */
+
+
+.nav-list ul {
+   display: inline-block;
+   vertical-align: top;
+   margin: 0;
+   padding: 0;
+   width: 82%;
+ }
+ 
+#icons-nav {
+   width: 130px;
+}
+
+#icons-nav .fa-solid, .fas a {
+   font-size: 38px;
+   color: #86261A;
+}
+
+/* 3. ---Main Section--- */
+
+
+#main-section {
+   position: relative;
+   background-image: url('../images/banner.jpg');
+   height: 885px;
+   background-size: cover;
+   background-position: center;
+   width: 1800px;
+ }
+
+#main-section #title {
+   background-color: #ffffff;
+   color: #86261A;
+   height: 104px;
+   font-size: 50px;
+   text-align: center;
+   padding-top: -20px;
+   margin: 0;
+}
+
+#main-section {
+   padding-top: 110px;
+}
+
+/* 3.2 ---Image Section--- */
+
+#image-container {
+   padding-top: 95px;
+}
+
+/* 3.3 ---Text Box --- */
+
+.text-box {
+   background-color: #fff;
+}
+
+.team-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 110px;
+   }
+
+   .team-member {
+   position: relative;
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   overflow: hidden;
+   cursor: pointer;
+   }
+
+   .team-member img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: all 0.3s ease;
+   }
+
+   .member-info {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   padding: 10px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.6);
+   color: #fff;
+   transition: all 0.3s ease;
+   transform: translateY(100%);
+   }
+
+   .team-member:hover img {
+   transform: scale(1.2);
+   }
+
+   .team-member:hover .member-info {
+   transform: translateY(0);
+   }
+
+   .description {
+   position: absolute;
+   bottom: -50px;
+   width: 100%;
+   padding: 10px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.6);
+   color: #fff;
+   transition: all 0.3s ease;
+   font-size: 20px;
+   }
+
+   .team-member:hover .description {
+   bottom: 0;
+   }
+
+   .description {
+   position: relative;
+   top: 10px;
+   width: 100%;
+   padding: 10px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.6);
+   color: #fff;
+   transition: all 0.3s ease;
+   }
+
+   .team-member:hover .description {
+   top: 80px;
+   }
+
+/* 3. ---Footer--- */
+
+footer {
+   background-color: #86261A;
+   height: 57px;
+   width: 100%;
+   bottom: 0;
+ }
+
+footer p:first-child {
+   font-weight: 100;
+}
+
+footer p {
+   color: #ffffff;
+   position: center;
+}
